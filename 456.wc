@@ -1,0 +1,67 @@
+
+
+#define BLAH
+
+
+
+
+void main(int* argc,  char** argv) {
+    char a = 'a';
+    char flex = '//';
+    
+    char huh = '\\';
+    char incompileable = '\"';
+    char flex2 = '\'';
+
+    
+    const char* constStr = "a'b//ob'a\" l\'o\'l";
+    
+    const char* wtf = '"//d"/*1*/';
+     const char* constStr2 = "\" // /*kek*/ \" lol \"\"";
+    malloc(); 
+    const char* rip = "\\\
+  // hehe";
+    const char* concat_str1 = "very \"difficut' " "to' \"unparse";
+    const char* concat_str1 = "\"second very \"difficut' ""to' \"unparse\""; f(1);
+
+    
+    f(2);
+
+    
+    const char* die = " \
+    now we\'re /*fine*/ \" \
+    // i guess \* that \"should\" \'\
+    be \' //RIGTH \'\
+  ";
+
+    const char* total_rip = "\\\"\"\\\\''\'\'''\'\
+  \\/*//\"\\";
+    
+    doing(stupid_things, "yes // /*lol*/ /\"/");
+    printf("я НЕ конец файла.");
+    
+
+    f(1); 
+}
+
+void func()
+{
+    
+
+    printf("hello");
+
+    
+
+    printf("hello2");
+
+
+    
+
+    printf("hello3");
+
+
+    
+
+    printf("hello4");
+}
+
