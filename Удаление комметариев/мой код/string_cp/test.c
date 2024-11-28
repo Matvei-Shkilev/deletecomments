@@ -1,0 +1,149 @@
+Данные входного файла "test.c":
+
+int myproc1()
+
+{
+
+    const char* nc = " Don't touch text /* inside */ quoted strings ";
+
+
+
+    // This is comment
+
+    printf(" This is // not comment ");
+
+
+
+    printf(" This is /* not comment */ too");
+
+
+
+    myproc2();  // This is comment 
+
+
+
+    /* This is comment too */ myproc3();
+
+
+
+    myproc4();
+
+
+
+    /* This is
+
+       multiline comment */
+
+
+
+    myproc5();
+
+
+
+    // This is "cut-line"  \
+
+    and prolongation of single - line comment
+
+
+
+        myproc6();
+
+
+
+    printf(" This is multiline \
+
+        string constant                 \
+
+        without /* comment. Don't /*  \
+
+        touch me. */ please" );
+
+
+
+        /* This is multiline comment
+
+           // this is single-line comment inside multiline */
+
+
+
+        myproc7();
+
+
+
+    /* This is multiline comment ...
+
+        /* prolongation ....
+
+        end of comment here -> */
+
+
+
+    myproc8();
+
+
+
+    return 1;
+
+}
+
+
+
+Данные выходного файла "test.wc":
+
+int myproc1()
+
+{
+
+    const char* nc = " Don't touch text /* inside */ quoted strings ";
+
+
+
+    printf(" This is // not comment ");
+
+
+
+    printf(" This is /* not comment */ too");
+
+
+
+    myproc2();
+
+
+
+    myproc3();
+
+
+
+    myproc4();
+
+
+
+    myproc5();
+
+
+
+    myproc6();
+
+
+
+    printf(" This is multiline \
+
+        string constant                 \
+
+        without /* comment. Don't /*  \
+
+        touch me. */ please" );
+
+
+
+        myproc7();
+
+
+
+    myproc8();
+
+
+
+    return 1;
+
+}
